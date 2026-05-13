@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gomolemo | Aspiring Solutions Architecture</title>
+  <title>Gomolemo | Aspiring Solutions Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
@@ -13,33 +13,46 @@
 
   <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- NAV -->
+  <!-- ═══ NAV ═══ -->
   <nav>
     <a href="#hero" class="nav-logo">gomolemo<span>.dev</span></a>
-    <ul class="nav-links">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#projects">Work</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- ═══ HERO ═══ -->
   <section id="hero">
     <div class="hero-bg-grid"></div>
     <div class="hero-glow"></div>
+    <div class="hero-number" aria-hidden="true">01</div>
 
     <div class="hero-content">
-      <div class="hero-tag">Available for opportunities</div>
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Open to work — JHB &amp; remote
+      </div>
+
       <h1 class="hero-name">
-        Gomolemo<br/><span class="accent">Rampa.</span>
+        Algorithms<br/>
+        dictate <span class="accent">reality.</span><br/>
+        I write them.
       </h1>
+
       <p class="hero-headline">
-        Software Developer &amp; Computer Sciences & Information Systems - Final Year Student at Wits University.<br/>
-        Algorithms dictate reality. I write the algorithms.
+        Gomolemo Rampa — CS &amp; Information Systems, Final Year at Wits.
+        Building toward Solutions Architecture through software, cloud systems,
+        and the conviction that business and technology combined make wonders.
       </p>
+
       <div class="hero-cta-row">
-        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#projects" class="btn btn-primary">See the work →</a>
         <a href="mailto:wisemanrampa@gmail.com" class="btn btn-ghost">Get In Touch</a>
         <a href="https://github.com/gomolemorampa" target="_blank" class="btn btn-ghost">GitHub ↗</a>
       </div>
@@ -49,97 +62,107 @@
       <div class="photo-frame">
         <div class="photo-inner">
           <!--
-            SWAP THIS OUT:
-            <img src="photo.jpg" alt="Gomolemo Rampa" />    VITAL DON'T FORGET POIZEN
+            Replace this block with:
+            <img src="photo.jpg" alt="Gomolemo Rampa" />
+            VITAL — DON'T FORGET — POIZEN
           -->
           <div class="photo-placeholder">
             <div class="photo-icon">👤</div>
             <span>add photo.jpg</span>
           </div>
         </div>
-        <div class="photo-badge"> Johannesburg, ZA</div>
+        <div class="photo-badge">📍 Johannesburg, ZA</div>
       </div>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div>
-      <div class="section-label">Background</div>
-      <h2 class="section-title">About Me</h2>
-      <div class="about-text">
-        <p> Final-year student in Computer Science and Information Systems, deeply invested in the powerful belief that business and technology combined can make wonders.</p>
-        <p>My strategic career roadmap begins with leveraging this dual foundation in a Business Analyst or Software Developer role, where I can apply my strong organizational and stakeholder-management skills to process optimization and complex problem-solving.</p>
-        <p>This is the first step on a deliberate path that moves through Cloud Development and Cybersecurity, mastering scalable systems and integration, to ultimately achieve a Solutions Architecture role, where my diverse background will converge to design holistic, secure, and business-driven enterprise solutions.</p>
-      </div>
+  <!-- ═══ MARQUEE TICKER ═══ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Node.js</span><span class="sep">✦</span>
+      <span>MongoDB</span><span class="sep">✦</span>
+      <span>Android Studio</span><span class="sep">✦</span>
+      <span>React</span><span class="sep">✦</span>
+      <span>CI/CD</span><span class="sep">✦</span>
+      <span>Express</span><span class="sep">✦</span>
+      <span>GitHub Actions</span><span class="sep">✦</span>
+      <span>Gemini API</span><span class="sep">✦</span>
+      <span>TypeScript</span><span class="sep">✦</span>
+      <span>Solutions Architecture</span><span class="sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Node.js</span><span class="sep">✦</span>
+      <span>MongoDB</span><span class="sep">✦</span>
+      <span>Android Studio</span><span class="sep">✦</span>
+      <span>React</span><span class="sep">✦</span>
+      <span>CI/CD</span><span class="sep">✦</span>
+      <span>Express</span><span class="sep">✦</span>
+      <span>GitHub Actions</span><span class="sep">✦</span>
+      <span>Gemini API</span><span class="sep">✦</span>
+      <span>TypeScript</span><span class="sep">✦</span>
+      <span>Solutions Architecture</span><span class="sep">✦</span>
     </div>
+  </div>
 
-    <div class="about-stats">
-      <div class="stat-card reveal d1">
-        <div class="stat-num">3+</div>
-        <div class="stat-label">Years coding</div>
-      </div>
-      <div class="stat-card reveal d2">
-        <div class="stat-num">2+</div>
-        <div class="stat-label">Projects shipped</div>
-      </div>
-      <div class="stat-card reveal d3">
-        <div class="stat-num">Undergrad</div>
-        <div class="stat-label">CS @ Wits</div>
-      </div>
-      <div class="stat-card reveal d4">
-        <div class="stat-num">JHB</div>
-        <div class="stat-label">Based in ZA</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- SKILLS -->
+  <!-- ═══ SKILLS — BENTO GRID ═══ -->
   <section id="skills">
-    <div class="section-label">Core Competencies</div>
-    <h2 class="section-title">Skills Matrix</h2>
+    <div class="skills-header">
+      <div class="section-label">What I work with</div>
+      <h2 class="section-title">The Stack</h2>
+    </div>
 
-    <div class="skills-grid">
-      <div class="skill-group reveal d1">
-        <div class="skill-group-title">// Languages</div>
-        <div class="skill-tags">
-          <span class="skill-tag highlight">JavaScript</span>
-          <span class="skill-tag highlight">TypeScript</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">C#</span>
+    <div class="bento-grid">
+
+      <!-- Wide: primary languages -->
+      <div class="bento-card bento-wide reveal d1">
+        <div class="bento-label">// I write mostly</div>
+        <div class="bento-big-tags">
+          <span class="big-tag">JavaScript</span>
+          <span class="big-tag">TypeScript</span>
+          <span class="big-tag dim">Python</span>
+          <span class="big-tag dim">C#</span>
+        </div>
+        <p class="bento-note">Started with Java. Still use it. C# caught me off guard.</p>
+      </div>
+
+      <!-- Tall: backend -->
+      <div class="bento-card bento-tall reveal d2">
+        <div class="bento-label">// Backend</div>
+        <div class="bento-stack-list">
+          <div class="stack-item highlight">Node.js</div>
+          <div class="stack-item highlight">Express.js</div>
+          <div class="stack-item">REST API Design</div>
+          <div class="stack-item">JWT / OAuth</div>
+          <div class="stack-item">WebSockets</div>
         </div>
       </div>
 
-      <div class="skill-group reveal d2">
-        <div class="skill-group-title">// Backend &amp; APIs</div>
-        <div class="skill-tags">
-          <span class="skill-tag highlight">Node.js</span>
-          <span class="skill-tag highlight">Express.js</span>
-          <span class="skill-tag">REST API Design</span>
-          <span class="skill-tag">JWT / OAuth</span>
-          <span class="skill-tag">WebSockets</span>
-        </div>
-      </div>
-
-      <div class="skill-group reveal d3">
-        <div class="skill-group-title">// Databases</div>
+      <!-- Data -->
+      <div class="bento-card reveal d3">
+        <div class="bento-label">// Data</div>
         <div class="skill-tags">
           <span class="skill-tag highlight">MongoDB</span>
           <span class="skill-tag">Mongoose ODM</span>
           <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">MySQL</span>
           <span class="skill-tag">Firebase</span>
         </div>
       </div>
 
-      <div class="skill-group reveal d4">
-        <div class="skill-group-title">// DevOps &amp; CI/CD</div>
+      <!-- AI — accent card -->
+      <div class="bento-card bento-accent reveal d4">
+        <div class="bento-label">// Currently excited about</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Gemini API</span>
+          <span class="skill-tag highlight">Agentic AI</span>
+          <span class="skill-tag">Google AI Studio</span>
+          <span class="skill-tag">LLM Integration</span>
+          <span class="skill-tag">Prompt Engineering</span>
+        </div>
+      </div>
+
+      <!-- DevOps -->
+      <div class="bento-card reveal d5">
+        <div class="bento-label">// DevOps</div>
         <div class="skill-tags">
           <span class="skill-tag highlight">CI/CD Pipelines</span>
           <span class="skill-tag">GitHub Actions</span>
@@ -149,152 +172,228 @@
         </div>
       </div>
 
-      <div class="skill-group reveal d5">
-        <div class="skill-group-title">// AI &amp; Machine Learning</div>
-        <div class="skill-tags">
-          <span class="skill-tag highlight">Gemini API</span>
-          <span class="skill-tag highlight">Google AI Studio</span>
-          <span class="skill-tag">LLM Integration</span>
-          <span class="skill-tag">Agentic AI</span>
-          <span class="skill-tag">Prompt Engineering</span>
-        </div>
-      </div>
-
-      <div class="skill-group reveal d1">
-        <div class="skill-group-title">// Frontend</div>
+      <!-- Frontend -->
+      <div class="bento-card bento-wide-sm reveal d1">
+        <div class="bento-label">// Frontend (enough to be dangerous)</div>
         <div class="skill-tags">
           <span class="skill-tag">React</span>
+          <span class="skill-tag">Android Studio</span>
           <span class="skill-tag">HTML5 / CSS3</span>
-          <span class="skill-tag">Responsive Design</span>
           <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Responsive Design</span>
         </div>
       </div>
+
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- PROJECTS -->
+  <!-- ═══ PROJECTS ═══ -->
   <section id="projects">
-    <div class="section-label">Selected Work</div>
-    <h2 class="section-title">Projects</h2>
+    <div class="section-label">Selected work</div>
+    <h2 class="section-title">Things I've built</h2>
 
-    <div class="projects-grid">
+    <div class="projects-layout">
 
-      <div class="project-card reveal d1">
-        <div class="project-number">01 / Full-Stack Platform</div>
-        <div class="project-title">Stokvel Management Assistant</div>
-        <div class="project-block">
-          <div class="pil">Problem</div>
-          <p class="project-text">Rotating savings groups (stokvels) rely on manual record-keeping and WhatsApp coordination — creating opacity around contributions, payouts, and member accountability.</p>
+      <!-- ── Project 01: Featured full-width ── -->
+      <div class="project-featured reveal d1">
+        <div class="project-meta">
+          <span class="project-number">01</span>
+          <span class="project-type">Full-Stack Platform</span>
         </div>
-        <div class="project-block">
-          <div class="pil">Solution</div>
-          <p class="project-text">A full-stack management platform with a 3-tier architecture: React frontend, Node.js/Express REST API layer, and MongoDB persistence. Features role-based access, automated contribution tracking, and payout scheduling.</p>
-        </div>
-        <div class="tech-stack">
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">Express</span>
-          <span class="tech-pill">MongoDB</span>
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">JWT Auth</span>
-          <span class="tech-pill">GitHub Actions</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/GomolemoRampa/TNBT-Stokvel-Management-Assistant" target="_blank" class="proj-link">⌥ GitHub Repo</a>
-          <a href="https://gomolemorampa.github.io/TNBT-Stokvel-Management-Assistant/" class="proj-link">↗ Live Demo</a>
+        <div class="project-featured-inner">
+          <div class="project-featured-text">
+            <h3 class="project-title">Stokvel Management Assistant</h3>
+            <p class="project-text">
+              Stokvels are a cornerstone of South African financial culture — but most still
+              run on WhatsApp messages and handwritten notebooks. We built the digital
+              infrastructure they deserve: a full platform where groups track contributions,
+              schedule payouts, and hold each other accountable with a clear audit trail.
+            </p>
+            <p class="project-text">
+              3-tier architecture: React on the front, Node.js/Express in the middle,
+              MongoDB at the back. Role-based access so admins and members see exactly
+              what they need — and nothing they shouldn't.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/GomolemoRampa/TNBT-Stokvel-Management-Assistant" target="_blank" class="proj-link">⌥ GitHub</a>
+              <a href="https://gomolemorampa.github.io/TNBT-Stokvel-Management-Assistant/" target="_blank" class="proj-link">↗ Live Demo</a>
+            </div>
+          </div>
+          <div class="project-featured-stack">
+            <span class="tech-pill lit">Node.js</span>
+            <span class="tech-pill lit">MongoDB</span>
+            <span class="tech-pill lit">Express</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">JWT Auth</span>
+            <span class="tech-pill">GitHub Actions</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal d2">
-        <div class="project-number">02 / Android Studio App</div>
-        <div class="project-title">Restaurant Order App</div>
-        <div class="project-block">
-          <div class="pil">Problem</div>
-          <p class="project-text">Constructed Scenario: The restaurant faces challenges in managing orders efficiently, leading to delays and customer dissatisfaction.</p>
+      <!-- ── Projects 02 + 03 side by side ── -->
+      <div class="projects-duo">
+
+        <!-- Project 02 -->
+        <div class="project-card reveal d2">
+          <div class="project-meta">
+            <span class="project-number">02</span>
+            <span class="project-type">Android App</span>
+          </div>
+          <h3 class="project-title">Restaurant Order App</h3>
+          <p class="project-text">
+            A restaurant faces order chaos — delays, miscommunication, unhappy customers.
+            Built a native Android application that lets customers place orders, track status,
+            and receive real-time notifications, while the kitchen sees a live queue.
+          </p>
+          <p class="project-text project-text-note">
+            Never formally deployed — a Gradle build can be generated from source for local testing.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-pill">Android Studio</span>
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">PHP</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">REST</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KreepKid/Restaurant-Order-App" target="_blank" class="proj-link">⌥ GitHub</a>
+          </div>
         </div>
-        <div class="project-block">
-          <div class="pil">Solution</div>
-          <p class="project-text">An Android application designed to streamline order management for restaurants, allowing customers to place orders, track their status, and receive notifications about updates.</p>
+
+        <!-- Project 03 -->
+        <div class="project-card project-card-offset reveal d3">
+          <div class="project-meta">
+            <span class="project-number">03</span>
+            <span class="project-type">Live Challenge</span>
+            <span class="project-badge-live">● Active</span>
+          </div>
+          <h3 class="project-title">Twin Transition Challenge — TUHF21</h3>
+          <p class="project-text">
+            The biggest barrier to green infrastructure in affordable rental housing isn't
+            awareness — it's financing. Small-scale developers and resident landlords
+            can't access the capital needed to implement solar water heaters, energy-efficient
+            lighting, or water efficiency systems.
+          </p>
+          <p class="project-text">
+            Working toward a solution that creates measurable, quantifiable efficiency gains
+            in energy, water, and waste across TUHF21's portfolio of affordable housing units.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-pill">Systems Thinking</span>
+            <span class="tech-pill">Green Infrastructure</span>
+            <span class="tech-pill">Stakeholder Analysis</span>
+            <span class="tech-pill">Impact Measurement</span>
+          </div>
         </div>
-        <div class="tech-stack">
-          <span class="tech-pill">Android Studio</span>
-          <span class="tech-pill">Java</span>
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">PHP</span>
-          <span class="tech-pill">MySQL</span>
-          <span class="tech-pill">REST</span>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="about-grid">
+
+      <div class="about-left">
+        <div class="section-label">Who I am</div>
+        <h2 class="section-title">About</h2>
+        <div class="about-text">
+          <p>
+            Final-year CS &amp; Information Systems student at Wits, Johannesburg.
+            I hold a deep conviction that business and technology combined can make wonders —
+            and I'm building a career around proving it.
+          </p>
+          <p>
+            My path is deliberate: start as a Business Analyst or Software Developer,
+            applying strong organizational and stakeholder-management skills to process
+            optimisation and complex problem-solving. Move through Cloud Development
+            and Cybersecurity. Arrive at Solutions Architecture — where my dual technical
+            and business background converges to design holistic, secure, enterprise-grade systems.
+          </p>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/KreepKid/Restaurant-Order-App" target="_blank" class="proj-link">⌥ GitHub Repo</a>
-          <p>It was an Android Application that was never deployed, though possible to generate a gradle build file from the source code for testing.</p>
+
+        <div class="currently">
+          <div class="currently-label">// Currently</div>
+          <ul class="currently-list">
+            <li><span>Building</span> Stokvel Platform Sprint 2</li>
+            <li><span>Competing</span> Twin Transition Challenge (TUHF21)</li>
+            <li><span>Studying</span> Cloud &amp; Cybersecurity patterns</li>
+            <li><span>Goal</span> Solutions Architecture</li>
+          </ul>
         </div>
       </div>
 
-      <div class="project-card reveal d3">
-        <div class="project-number">03 / Real-World Project</div>
-        <div class="project-title">[Current]- Twin Transition Challenge (TUHF21)</div>
-        <div class="project-block">
-          <div class="pil">Problem</div>
-          <p class="project-text">The primary barrier to widespread green infrastructure adoption in affordable rental housing is the challenge small-scale developers and resident landlords (SMMEs) face in accessing and financing these projects. While there is a need to implement energy-efficient lighting, solar water heaters, and water efficiency measures, structural and financial constraints inhibit uptake.</p>
+      <div class="about-right">
+        <div class="stat-card reveal d1">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Years writing code</div>
         </div>
-        <div class="project-block">
-          <div class="pil">Outcome</div>
-          <p class="project-text">The successful outcome for this challenge will be defined by a measurable impact on sustainability across TUHF21’s project portfolio. The implemented solution must lead to quantifiable efficiencies (relative to a standard benchmark) in energy, water, and waste within the affordable rental housing units.</p>
+        <div class="stat-card reveal d2">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Projects shipped</div>
         </div>
-        <div class="tech-stack">
-          <span class="tech-pill"></span>
+        <div class="stat-card stat-card-wide reveal d3">
+          <div class="stat-num">Wits</div>
+          <div class="stat-label">CS &amp; IS — Final Year, Johannesburg</div>
+        </div>
+        <div class="stat-card stat-card-accent reveal d4">
+          <div class="stat-num-sm">Open to</div>
+          <div class="stat-label-lg">Internships · Graduate roles · Interesting problems</div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- CONTACT -->
+  <!-- ═══ CONTACT ═══ -->
   <section id="contact">
-    <div class="section-label">Let's connect</div>
-    <h2 class="section-title">Get In Touch</h2>
-    <p class="contact-sub">Open to internships, graduate roles, and interesting collaborations. Reach out directly or find me on GitHub and LinkedIn.</p>
+    <div class="contact-inner">
+      <div class="section-label">Say hello</div>
+      <h2 class="contact-heading">Let's build<br/><span class="accent">something.</span></h2>
+      <p class="contact-sub">
+        Whether it's a role, a collab, or a conversation about the future of enterprise systems —
+        my inbox is open.
+      </p>
 
-    <div class="contact-links">
-      <a href="mailto:wisemanrampa@gmail.com" class="contact-card">
-        <div class="contact-card-icon">✉️</div>
-        <div class="contact-card-text">
-          <div class="contact-card-label">Email</div>
-          <div class="contact-card-value">wisemanrampa@gmail.com</div>
-        </div>
-      </a>
-      <a href="https://github.com/gomolemorampa" target="_blank" class="contact-card">
-        <div class="contact-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="#00e8a2"/>
-          </svg>
-        </div>
-        <div class="contact-card-text">
-          <div class="contact-card-label">GitHub</div>
-          <div class="contact-card-value">gomolemorampa</div>
-        </div>
-      </a>
-      <a href="https://linkedin.com/in/gomolemorampa27" target="_blank" class="contact-card">
-        <div class="contact-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#00e8a2"/>
-          </svg>
-        </div>
-        <div class="contact-card-text">
-          <div class="contact-card-label">LinkedIn</div>
-          <div class="contact-card-value">gomolemorampa27</div>
-        </div>
-      </a>
+      <div class="contact-links">
+        <a href="mailto:wisemanrampa@gmail.com" class="contact-card">
+          <div class="contact-card-icon">✉️</div>
+          <div class="contact-card-text">
+            <div class="contact-card-label">Email</div>
+            <div class="contact-card-value">wisemanrampa@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://github.com/gomolemorampa" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="#00e8a2"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <div class="contact-card-label">GitHub</div>
+            <div class="contact-card-value">gomolemorampa</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/gomolemorampa27" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#00e8a2"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <div class="contact-card-label">LinkedIn</div>
+            <div class="contact-card-value">gomolemorampa27</div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ═══ FOOTER ═══ -->
   <footer>
-    <p>© 2025 Gomolemo. My digital footprint made perfect.</p>
-    <p>Made in <span class="mint">Johannesburg, ZA 🇿🇦</span></p>
+    <p>© 2025 Gomolemo — My digital footprint made perfect.</p>
+    <p class="footer-right">Johannesburg <span class="mint">🇿🇦</span></p>
   </footer>
 
   <script src="main.js"></script>
